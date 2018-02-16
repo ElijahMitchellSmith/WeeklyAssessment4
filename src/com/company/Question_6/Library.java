@@ -38,8 +38,13 @@ public class Library {
             System.out.println("There are no games in your Library.");
         } else {
             int index = 1;
-            for (Game game : gameLibrary) {
-                System.out.println(index++ + ". " + game.getTitle());
+            int position = 1;
+            for (int i = 0; i < gameLibrary.size(); i++) {
+                System.out.println(position + ". " + gameLibrary.get(i).getTitle());
+                position++;
+//
+// (Game game : gameLibrary) {
+//                System.out.println(index++ + ". " + game.getTitle());
             }
         }
         System.out.println("\n");
