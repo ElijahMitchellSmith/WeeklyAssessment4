@@ -6,6 +6,7 @@ import java.util.List;
 public class Main {
 
     private List<Car> carsList = new ArrayList<>();
+    private List<Car> modelsList = new ArrayList<>();
 
 
     public static void main(String[] args) {
@@ -16,6 +17,7 @@ public class Main {
 
         Main main = new Main();
         main.populateArrayList();
+        main.getCarModel();
     }
 
     private void populateArrayList() {
@@ -27,5 +29,15 @@ public class Main {
         carsList.add(new Car("Tesla", "Model 3", "Grey"));
     }
 
+    protected void getCarModel() {
+        int position = 1;
 
+        for (int i = 0; i < carsList.size(); i++) {
+            System.out.println(position + ". " + carsList.get(i).getModel());
+            position++;
+
+        }
+
+
+    }
 }
