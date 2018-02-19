@@ -35,9 +35,13 @@ public class Main {
         for (int i = 0; i < carsList.size(); i++) {
             System.out.println(position + ". " + carsList.get(i).getModel());
             position++;
+            // Again a for loop seemed more appropriate but the instructor is always correct
+           // for (Car car : carsList)
+                   // System.out.println(car.getModel()); {
+
+            }
 
         }
 
 
     }
-}

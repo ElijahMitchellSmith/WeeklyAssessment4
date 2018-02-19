@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public Scanner input = new Scanner(System.in);
-    int userInput;
+
 
     public static void main(String[] args) {
         Main main = new Main();
@@ -19,42 +19,36 @@ public class Main {
         you have been teleported to a volcano."
          */
 
-    public void teleportationCirlce() {
-        try {
+    private void teleportationCirlce() {
             System.out.println("Please enter a number between 1 and 100");
-            input.nextInt();
+        int userInput =input.nextInt();
 
-            if (userInput >= 91) {
-                System.out.println("Well, I hope you like it hot, you have been teleported to a volcano.");
-            } if (userInput <= 45) {
+           // if (userInput >= 91) {
+    //            System.out.println("Well, I hope you like it hot, you have been teleported to a volcano.");
+         //   } if (userInput <= 45) {
+  //              System.out.println("You have been teleported to a swamp.");
+         //   } if (userInput <= 90) {
+//                System.out.println("Lucky you, you've been teleported to a beach!");
+
+
+              if (userInput >= 1 && userInput <= 45){
                 System.out.println("You have been teleported to a swamp.");
-            } if (userInput <= 90) {
+            } else if (userInput >= 46 && userInput <= 90){
                 System.out.println("Lucky you, you've been teleported to a beach!");
+            } else if (userInput >= 91 && userInput <= 100){
+                System.out.println("Well, I hope you like it hot, you have been teleported to a volcano.");
 
 
-//                if (1 <= userInput && 45 >= userInput) {
-////                System.out.println("You have been teleported to a swamp.");
-////            } else if (userInput >= 46 && userInput <= 90) {
-////                System.out.println("Lucky you, you've been teleported to a beach!");
-////            } else if (userInput > 91 && userInput <= 100) {
-////                System.out.println("Well, I hope you like it hot, you have been teleported to a volcano.");
-////
-////
-////
-////            } else if (userInput < 1 || userInput > 100)
-////                System.out.println("That is not a valid option");
-////            teleportationCirlce();
+
+//            } else (userInput < 1 || userInput > 100) {
+//                System.out.println("That is not a valid option");
+//                teleportationCirlce();
+
             }
 
-            } catch(InputMismatchException ime) {
-                input.nextInt();
-                System.out.println();
-                teleportationCirlce();
             }
         }
 
-
-    }
 
 
 //            input.nextInt();

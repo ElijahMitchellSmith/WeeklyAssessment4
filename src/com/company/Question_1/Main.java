@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Main {
     ArrayList<String> list = new ArrayList<String>();
+    // private List<String> myArrayList = new ArrayList<>()
    /*
     YOUR NAME HERE! - No really put your name here so we know who this belongs to when we grade it <3
     Elijah Mitchell Smith
@@ -24,7 +25,7 @@ public class Main {
 
     }
 
-    protected void addToArrayList() {
+    private void addToArrayList() {
         list.add("Fighter");
         list.add("Warlock");
         list.add("Wizard");
@@ -33,11 +34,17 @@ public class Main {
         list.add("Bard");
     }
 
-    protected void displayArray() {
+    private void displayArray() {
         int position = 1;
         for (int i = 0; i < list.size(); i++) {
             System.out.println(position + ". " + list.get(i));
             position++;
+        }
+        for (String item :
+                list) {
+            System.out.println(item);
+            // Um...Ok. A for loop seems more appropriate but whatever.
+
         }
 
 
